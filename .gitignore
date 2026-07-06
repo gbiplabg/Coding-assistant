@@ -1,0 +1,11 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.vercel
+.env*
+next-env.d.ts
+
+# Local Claude Code settings
+.claude/

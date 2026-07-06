@@ -1,0 +1,195 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #0b0d10;
+  color: #e6e8eb;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Scrollbars ---------- */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2c333c transparent;
+}
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: #2c333c;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #3a424d;
+  background-clip: content-box;
+}
+
+/* ---------- Markdown prose ---------- */
+.prose-mend {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  word-break: break-word;
+}
+.prose-mend > *:first-child {
+  margin-top: 0;
+}
+.prose-mend > *:last-child {
+  margin-bottom: 0;
+}
+.prose-mend p {
+  margin: 0.7em 0;
+}
+.prose-mend h1,
+.prose-mend h2,
+.prose-mend h3,
+.prose-mend h4 {
+  margin: 1.2em 0 0.5em;
+  font-weight: 650;
+  line-height: 1.3;
+}
+.prose-mend h1 {
+  font-size: 1.35rem;
+}
+.prose-mend h2 {
+  font-size: 1.18rem;
+}
+.prose-mend h3 {
+  font-size: 1.05rem;
+}
+.prose-mend ul,
+.prose-mend ol {
+  margin: 0.6em 0;
+  padding-left: 1.4em;
+}
+.prose-mend ul {
+  list-style: disc;
+}
+.prose-mend ol {
+  list-style: decimal;
+}
+.prose-mend li {
+  margin: 0.25em 0;
+}
+.prose-mend a {
+  color: #2dd4bf;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.prose-mend blockquote {
+  border-left: 3px solid #2c333c;
+  margin: 0.8em 0;
+  padding-left: 1em;
+  color: #a8b0ba;
+}
+.prose-mend hr {
+  border: none;
+  border-top: 1px solid #242a31;
+  margin: 1.2em 0;
+}
+.prose-mend table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 0.88rem;
+  display: block;
+  overflow-x: auto;
+}
+.prose-mend th,
+.prose-mend td {
+  border: 1px solid #242a31;
+  padding: 0.4em 0.7em;
+  text-align: left;
+}
+.prose-mend th {
+  background: #161a20;
+  font-weight: 600;
+}
+.prose-mend code.inline-code {
+  font-family: theme("fontFamily.mono");
+  font-size: 0.85em;
+  background: #1b2028;
+  border: 1px solid #242a31;
+  border-radius: 5px;
+  padding: 0.12em 0.4em;
+  color: #7fe7d8;
+}
+
+/* ---------- highlight.js tokens (custom teal-tinted theme) ---------- */
+.hljs {
+  color: #d7dbe0;
+  background: transparent;
+}
+.hljs-comment,
+.hljs-quote {
+  color: #5b636d;
+  font-style: italic;
+}
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-doctag,
+.hljs-name {
+  color: #f0879a;
+}
+.hljs-built_in,
+.hljs-class .hljs-title,
+.hljs-title.class_,
+.hljs-type {
+  color: #6cc0ff;
+}
+.hljs-string,
+.hljs-regexp,
+.hljs-addition {
+  color: #6fd6a0;
+}
+.hljs-number,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-meta {
+  color: #f2b482;
+}
+.hljs-function .hljs-title,
+.hljs-title.function_,
+.hljs-section {
+  color: #74d7c8;
+}
+.hljs-attr,
+.hljs-attribute,
+.hljs-property,
+.hljs-variable,
+.hljs-template-variable {
+  color: #e6c07b;
+}
+.hljs-tag {
+  color: #9aa4af;
+}
+.hljs-selector-id,
+.hljs-selector-class {
+  color: #74d7c8;
+}
+.hljs-params {
+  color: #d7dbe0;
+}
+.hljs-deletion {
+  color: #f0879a;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 700;
+}
